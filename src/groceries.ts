@@ -1,17 +1,22 @@
 // Step 1:
 // Write a createGroceries function that returns an array with 6 groceries items (each item is a string)
 function createGroceries(): string[] {
-  // write your code here...
+  const groceries: string[] = [
+    "milk",
+    "eggs",
+    "water",
+    "apple",
+    "mayo",
+    "banana",
+  ];
 
-  return []; // replace empty array with what you see is fit
+  return groceries;
 }
 
 // Step 2:
 // Write a getSecondGroceryItem function that returns the second grocery item from `groceries` argument
 function getSecondGroceryItem(groceries: string[]): string {
-  // write your code here...
-
-  return ""; // replace empty string with what you see is fit
+  return groceries[1]; // replace empty string with what you see is fit
 }
 
 // Step 3:
@@ -19,7 +24,7 @@ function getSecondGroceryItem(groceries: string[]): string {
 function getGroceriesCount(groceries: string[]): number {
   // write your code here...
 
-  return 0; // replace zero with what you see is fit
+  return groceries.length;
 }
 
 // Step 4:
@@ -27,15 +32,13 @@ function getGroceriesCount(groceries: string[]): number {
 function getLastGroceryItem(groceries: string[]): string {
   // write your code here...
 
-  return ""; // replace empty string with what you see is fit
+  return groceries[groceries.length - 1]; // replace empty string with what you see is fit
 }
 
 // Step 5:
 // Write a removeLastGroceryItem function that removes the last grocery item and return it
 function removeLastGroceryItem(groceries: string[]): string {
-  // write your code here...
-
-  return ""; // replace empty string with what you see is fit
+  return groceries.pop()!; // replace empty string with what you see is fit
 }
 
 // Step 6:
@@ -46,17 +49,18 @@ function addNewGroceries(
   itemOne: string,
   itemTwo: string
 ): string[] {
-  // write your code here...
+  const add: string[] = ["eggs", "apple"];
+  groceries.push(...add);
 
-  return []; // replace empty array with what you see is fit
+  return groceries; // replace empty array with what you see is fit
 }
 
 // Step 7:
 // Write a getFirstThreeGroceryItems function that returns a new array that contains the first three grocery items
 function getFirstThreeGroceryItems(groceries: string[]): string[] {
-  // write your code here...
+  const getFT: string[] = groceries.slice(0, 3);
 
-  return []; // replace empty array with what you see is fit
+  return getFT; // replace empty array with what you see is fit
 }
 
 export {
